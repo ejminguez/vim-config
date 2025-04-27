@@ -10,7 +10,7 @@ return {
     config = function()
       require("mason-lspconfig").setup(
         {
-          ensure_installed = { "lua_ls", "ast_grep", "tailwindcss", "dockerls", "html", "jsonls", "harper_ls", "stimulus_ls", "sqls", "vuels", "eslint", "ts_ls" }
+          ensure_installed = { "lua_ls", "ast_grep", "tailwindcss", "dockerls", "html", "jsonls", "harper_ls", "stimulus_ls", "sqls", "vuels", "eslint" }
         })
     end
   },
@@ -28,7 +28,6 @@ return {
       lspconfig.stimulus_ls.setup({})
       lspconfig.sqls.setup({})
       lspconfig.vuels.setup({})
-      lspconfig.eslint.setup({})
       lspconfig.ts_ls.setup({})
       vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
       vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
