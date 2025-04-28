@@ -1,1 +1,1 @@
-# My Lazy Vim Configs
+# my lazy vim configs
