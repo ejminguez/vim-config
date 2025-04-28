@@ -60,5 +60,16 @@ return {
         })
       end,
     })
+    -- Start Win-Move mode (using <leader> + w)
+    vim.keymap.set("n", "<leader>w", "<Cmd>WinShift<CR>", { desc = "WinShift Move Mode" })
+
+    -- Swap two windows (using <leader> + X)
+    vim.keymap.set("n", "<leader>X", "<Cmd>WinShift swap<CR>", { desc = "WinShift Swap Windows" })
+
+    -- Direct move commands (using <leader> + Shift + H/J/K/L)
+    vim.keymap.set("n", "<leader><S-H>", "<Cmd>WinShift left<CR>", { desc = "WinShift Move Left" })
+    vim.keymap.set("n", "<leader><S-J>", "<Cmd>WinShift down<CR>", { desc = "WinShift Move Down" })
+    vim.keymap.set("n", "<leader><S-K>", "<Cmd>WinShift up<CR>", { desc = "WinShift Move Up" })
+    vim.keymap.set("n", "<leader><S-L>", "<Cmd>WinShift right<CR>", { desc = "WinShift Move Right" })
   end,
 }
