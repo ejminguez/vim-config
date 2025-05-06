@@ -1,1 +1,2 @@
-# my lazy vim configs
+# vim configs
+> MISS NA MISS NA KITA HAHAYS
